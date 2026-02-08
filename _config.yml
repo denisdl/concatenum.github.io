@@ -6,8 +6,8 @@
 title: "Concatenum"
 name: "Denis Dias de Lima"
 description: "Entre o sinal e o ruído: tecnologia, ciência, cultura e decisões."
-url: "https://concatenum.github.io"
-baseurl: "" # deixe vazio para GitHub Pages em root domain
+url: "https://denisdl.github.io"
+baseurl: "/concatenum" # deixe vazio para GitHub Pages em root domain
 
 locale: "pt-BR"
 timezone: "America/Sao_Paulo"
