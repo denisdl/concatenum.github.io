@@ -1,0 +1,25 @@
+# === Jekyll ===
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# === Bundler / Ruby ===
+.bundle/
+vendor/bundle/
+
+# === Docker ===
+# (nenhum arquivo de runtime deve ser versionado)
+# imagens e containers não geram arquivos aqui
+
+# === Node / OS ===
+node_modules/
+.DS_Store
+Thumbs.db
+
+# === Editor / IDE ===
+.vscode/
+.idea/
+
+# === Logs ===
+*.log

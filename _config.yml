@@ -1,0 +1,126 @@
+# =========================================================
+# Concatenum - Jekyll config (Minimal Mistakes)
+# =========================================================
+
+# Site Settings
+title: "Concatenum"
+name: "Denis Dias de Lima"
+description: "Entre o sinal e o ruído: tecnologia, ciência, cultura e decisões."
+url: "https://concatenum.github.io"
+baseurl: "" # deixe vazio para GitHub Pages em root domain
+
+locale: "pt-BR"
+timezone: "America/Sao_Paulo"
+
+# =========================================================
+# Theme
+# =========================================================
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-paginate
+
+# =========================================================
+# Permalinks
+# =========================================================
+permalink: /:title/
+
+# =========================================================
+# Markdown / Syntax Highlight
+# =========================================================
+markdown: kramdown
+highlighter: rouge
+
+# =========================================================
+# Minimal Mistakes defaults
+# =========================================================
+minimal_mistakes_skin: "dark" # opções: default, air, aqua, contrast, dark, dirt, neon, mint, sunrise
+
+# =========================================================
+# Author
+# =========================================================
+author:
+  name: "Denis Dias de Lima"
+  avatar: "/assets/img/avatar.png"
+  bio: "Coordenador de Tecnologia. Escrevo sobre sinais fracos, IA, risco e cultura digital."
+  location: "Brasil"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/denisdl"
+    - label: "Substack"
+      icon: "fas fa-envelope"
+      url: "https://concatenum.substack.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/denisdl/"
+
+# =========================================================
+# Collections / Posts
+# =========================================================
+collections:
+  posts:
+    output: true
+
+# =========================================================
+# Defaults (aplica automaticamente em todos os posts)
+# =========================================================
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      show_date: true
+      toc: true
+      toc_sticky: true
+
+# =========================================================
+# Feed / SEO
+# =========================================================
+feed:
+  path: feed.xml
+
+# =========================================================
+# Pagination (opcional)
+# =========================================================
+paginate: 10
+paginate_path: /page:num/
+
+# =========================================================
+# Excerpts
+# =========================================================
+excerpt_separator: "<!--more-->"
+
+# =========================================================
+# Output / Build
+# =========================================================
+future: false
+strict_front_matter: false
+
+# =========================================================
+# Files to exclude
+# =========================================================
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - docker-compose.yml
+  - Dockerfile
+
+# =========================================================
+# Robots
+# =========================================================
+robots: noindex, nofollow
+
