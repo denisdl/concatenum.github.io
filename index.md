@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: single
 title: Concatenum
 author_profile: true
 ---

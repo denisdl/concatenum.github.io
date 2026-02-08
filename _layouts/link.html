@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="linklog">
+  <h1>
+    <a href="{{ page.external_url }}" target="_blank" rel="noopener noreferrer">
+      {{ page.title }}
+    </a>
+  </h1>
+
+  <p class="link-meta">
+    {{ page.date | date: "%d/%m/%Y" }}
+    {% if page.source %} · {{ page.source }}{% endif %}
+  </p>
+
+  <div class="link-commentary">
+    {{ content }}
+  </div>
+
+  <p class="link-permalink">
+    <a href="{{ page.url | relative_url }}">Permalink</a>
+  </p>
+</article>
