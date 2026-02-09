@@ -1,0 +1,77 @@
+---
+layout: default
+cover: /assets/img/PolygonLuminary3.svg
+---
+<div class="home">
+
+<div class="site-header-container {% if page.cover %}has-cover{% endif %}" {% if page.cover %}style="background-image: url({{ page.cover | prepend: site.baseurl }});"{% endif %}>
+  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+    <header class="site-header">
+      <h1 class="title">[ {{ site.title | downcase }} ]</h1>
+      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+<ul class="post-list">
+  {% for post in paginator.posts %}
+  <li>
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p>{{ post.description | strip_html }}</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">{{ post.date | date: "%d.%m.%Y" }}</div>
+      <div class="post-categories">
+      {% if post.categories.size > 0 %}in {% for cat in post.categories %}
+        {% if site.jekyll-archives %}
+        <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+        {% else %}
+        <a href="{{ site.baseurl }}/posts/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+        {% endif %}
+      {% endfor %}{% endif %}
+      </div>
+    </section>
+  </li>
+  {% if forloop.last == false %}
+  <hr>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="{{ '/' | relative_url }}"
+         class="pagination-link"
+         aria-label="Página anterior">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+      </a>
+    {% else %}
+      <a href="{{ '/page/' | append: paginator.previous_page | append: '/' | relative_url }}"
+         class="pagination-link"
+         aria-label="Página anterior">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+      </a>
+    {% endif %}
+  {% endif %}
+
+  <span class="pagination-status">
+    {{ paginator.page }} / {{ paginator.total_pages }}
+  </span>
+
+  {% if paginator.next_page %}
+    <a href="{{ '/page/' | append: paginator.next_page | append: '/' | relative_url }}"
+       class="pagination-link"
+       aria-label="Próxima página">
+      <i class="fa-solid fa-circle-chevron-right"></i>
+    </a>
+  {% endif %}
+
+</nav>
+
+</div>
+</div>

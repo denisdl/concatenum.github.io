@@ -3,5 +3,11 @@ services:
     build: .
     ports:
       - "4000:4000"
+      - "35729:35729"
     volumes:
       - .:/site
+    command: >
+      bundle exec jekyll serve
+      --host 0.0.0.0
+      --livereload
+      --force_polling

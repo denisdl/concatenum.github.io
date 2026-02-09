@@ -1,7 +1,10 @@
 ---
-title: Linklog
-layout: page
+layout: post
+title: Link log
 permalink: /links/
+main_nav: true
+nav_order: 2
+cover: /assets/img/PolygonLuminary3.svg
 ---
 
 {% for link in site.links %}

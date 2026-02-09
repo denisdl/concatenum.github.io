@@ -1,11 +1,12 @@
 # =========================================================
-# Concatenum - Jekyll config (Minimal Mistakes)
+# Concatenum - Jekyll config
 # =========================================================
 
 # Site Settings
 title: "Concatenum"
+subtitle: "referências conectadas para conversas sem algoritmo"
 name: "Denis Dias de Lima"
-description: "Entre o sinal e o ruído: tecnologia, ciência, cultura e decisões."
+description: "referências conectadas para conversas sem algoritmo"
 url: "https://concatenum.com"
 baseurl: "" # deixe vazio para GitHub Pages em root domain
 
@@ -15,15 +16,12 @@ timezone: "America/Sao_Paulo"
 # =========================================================
 # Theme
 # =========================================================
-remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-remote-theme
   - jekyll-seo-tag
-  - jekyll-include-cache
-  - jekyll-paginate
+
+logo: /assets/img/denisdl-synthwave.png
 
 # =========================================================
 # Permalinks
@@ -37,11 +35,6 @@ markdown: kramdown
 highlighter: rouge
 
 # =========================================================
-# Minimal Mistakes defaults
-# =========================================================
-minimal_mistakes_skin: "dark" # opções: default, air, aqua, contrast, dark, dirt, neon, mint, sunrise
-
-# =========================================================
 # Author
 # =========================================================
 author:
@@ -51,7 +44,7 @@ author:
   location: "Brasil"
   links:
     - label: "GitHub"
-      icon: "fab fa-github"
+      icon: "fa fa-github"
       url: "https://github.com/denisdl"
     - label: "Substack"
       icon: "fas fa-envelope"
@@ -59,6 +52,13 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/denisdl/"
+
+social:
+  - name: Bluesky
+    icon: brands bluesky
+    url: https://bsky.app/profile/concatenum.com
+    username: concatenum.com
+    desc: Bluesky
 
 # =========================================================
 # Collections / Posts
@@ -78,15 +78,8 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
-      show_date: true
-      toc: true
-      toc_sticky: true
+      layout: post
+
 
 # =========================================================
 # Feed / SEO
@@ -98,7 +91,9 @@ feed:
 # Pagination (opcional)
 # =========================================================
 paginate: 10
-paginate_path: /page:num/
+paginate_path: /page/:num/
+plugins:
+  - jekyll-paginate
 
 # =========================================================
 # Excerpts
@@ -122,6 +117,9 @@ exclude:
   - README.md
   - docker-compose.yml
   - Dockerfile
+  - tmp
+  - docs
+  - .jekyll-cache
 
 # =========================================================
 # Robots
