@@ -9,7 +9,7 @@ tags:
   - jogos
 layout: post
 published: true
-cover: /assets/img/PolygonLuminary2.svg
+cover: /assets/img/PolygonLuminary3.svg
 
 ---
 

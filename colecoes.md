@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "@denisdl"
-description: Denis Dias de Lima
-permalink: /denisdl/
+title: Coleções
+permalink: /colecoes/
 main_nav: true
-nav_order: 4
+nav_order: 3
 cover: /assets/img/PolygonLuminary3.svg
 ---
 
@@ -16,18 +15,10 @@ Aqui a proposta é justamente juntar pontos. Notícias, tecnologia, curiosidade,
 
 A intenção é que faça sentido agora e continue fazendo depois, mesmo quando o contexto muda e apenas a conexão entre as coisas permanece.
 
-- [instagram.com/concatenum](https://instagram.com/concatenum)
-- [tiktok.com/@concatenum](https://tiktok.com/@concatenum)
-- [youtube.com/concatenum](https://youtube.com/concatenum)
-- [bsky.app/profile/concatenum.com](https://bsky.app/profile/concatenum.com)
-
 ---
 
-Trabalho há mais 35 anos na área de Tecnologia em diversos cargos, conectando estratégia de negócio à execução técnica. Transformo oportunidades e desafios em produtos digitais escaláveis, atuando na liderança de times multidisciplinares e na tomada de decisões técnicas que sustentam crescimento, previsibilidade e qualidade.
+Tenho mais de 35 anos trabalhando na área de Tecnologia conectando estratégia de negócio à execução técnica. Transformo oportunidades e desafios em produtos digitais escaláveis, atuando na liderança de times multidisciplinares e na tomada de decisões técnicas que sustentam crescimento, previsibilidade e qualidade.
 
-- [linkedin.com/in/denisdl/](https://www.linkedin.com/in/denisdl/)
-
-![Denis Dias de Lima](/assets/img/denisdl-synthwave.png)
-
+[linkedin.com/in/denisdl/](https://www.linkedin.com/in/denisdl/)
 
 ---

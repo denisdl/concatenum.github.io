@@ -7,10 +7,12 @@
 h1,h2,h3,h4,h5,
 div,p { font-family: "Google Sans Flex";}
 
+h2.subtitle,
 blockquote p,
-h2.subtitle {
+p.subtitle {
   font-family: "Source Serif 4";
   font-style: italic;
+  font-weight: normal;
 } 
 
 blockquote p {
